@@ -36,7 +36,7 @@ namespace ADBParser
             str.AppendFormat("{0},{1},{2},{3},{4},{5},", _sparse.SpellId4, _sparse.SpellTrigger4, _sparse.SpellCharges4, _sparse.SpellCooldown4, _sparse.SpellCategory4, _sparse.SpellCategoryCooldown4);
             str.AppendFormat("{0},{1},{2},{3},{4},{5},", _sparse.SpellId5, _sparse.SpellTrigger5, _sparse.SpellCharges5, _sparse.SpellCooldown5, _sparse.SpellCategory5, _sparse.SpellCategoryCooldown5);
             str.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},", _sparse.Bonding, _sparse.Description.EscapeSQL(), _sparse.PageText, _sparse.LanguageID, _sparse.PageMaterial, _sparse.StartQuest, _sparse.LockID, _item.Material);
-            str.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},{8},", _item.Sheath, _sparse.RandomProperty, _sparse.RandomSuffix, _sparse.ItemSet, _sparse.MaxDurability, _sparse.Area, _sparse.Map, _sparse.BagFamily, _sparse.TotemCategory);
+            str.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},{8},", _item.Sheath, _sparse.RandomProperty, _sparse.RandomSuffix, _sparse.ItemSet, 0/*_sparse.MaxDurability*/, _sparse.Area, _sparse.Map, _sparse.BagFamily, _sparse.TotemCategory);
             str.AppendFormat("{0},{1},{2},{3},{4},{5},{6},", _sparse.Color1, _sparse.Content1, _sparse.Color2, _sparse.Content2, _sparse.Color3, _sparse.Content3, _sparse.SocketBonus);
             str.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},{8})", _sparse.GemProperties, _sparse.ArmorDamageModifier, _sparse.Duration, _sparse.ItemLimitCategory, _sparse.HolidayId, _sparse.StatScalingFactor, _sparse.Field130, _sparse.Field131, _build);
             return str.ToString();

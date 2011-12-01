@@ -7,6 +7,9 @@ namespace ADBParser.Formats
         public int    Quality { get; set; }                                      // 1
         public int    Flags { get; set; }                                        // 2
         public int    Flags2 { get; set; }                                       // 3
+        public float  Unk430_1 { get; set; }
+        public float  Unk430_2 { get; set; }
+        public int    Unk430_3 { get; set; }
         public int    BuyPrice { get; set; }                                     // 4
         public int    SellPrice { get; set; }                                    // 5
         public int    InventoryType { get; set; }                                // 6
@@ -114,7 +117,6 @@ namespace ADBParser.Formats
         public int    RandomProperty { get; set; }                               // 108
         public int    RandomSuffix { get; set; }                                 // 109
         public int    ItemSet { get; set; }                                      // 110
-        public int    MaxDurability { get; set; }                                // 111
         public int    Area { get; set; }                                         // 112
         public int    Map { get; set; }                                          // 113
         public int    BagFamily { get; set; }                                    // 114

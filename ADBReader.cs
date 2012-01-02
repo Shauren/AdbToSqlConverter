@@ -140,7 +140,12 @@ namespace ADBParser
                 {
                     var obj = new T();
                     ReadValuesToClass(obj, reader);
-                    Entries.Add(obj.Id, obj);
+                    // Apparently adb files can contain multiple entries for the same item
+                    // Assume the last one is "newest" and has the desired info
+                    if (!Entries.ContainsKey(obj.Id))
+                        Entries.Add(obj.Id, obj);
+                    else
+                        Entries[obj.Id] = obj;
                 }
             }
         }

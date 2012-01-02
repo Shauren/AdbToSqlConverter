@@ -12,7 +12,7 @@ namespace ADBParser
             using (var writer = new StreamWriter("item_parsed.sql", false))
             {
                 writer.Write("REPLACE INTO `item_template` (");
-                writer.Write("`entry`,`Class`,`SubClass`,`Unk0`,`Name`,`DisplayId`,`Quality`,`Flags`,`FlagsExtra`,`BuyPrice`,`SellPrice`,`InventoryType`,");
+                writer.Write("`entry`,`Class`,`SubClass`,`Unk0`,`Name`,`DisplayId`,`Quality`,`Flags`,`FlagsExtra`,`Unk430_1`,`Unk430_2`,`Unk430_3`,`BuyPrice`,`SellPrice`,`InventoryType`,");
                 writer.Write("`AllowableClass`,`AllowableRace`,`ItemLevel`,`RequiredLevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredSpell`,`RequiredHonorRank`,");
                 writer.Write("`RequiredCityRank`,`RequiredReputationFaction`,`RequiredReputationRank`,`MaxCount`,`Stackable`,`ContainerSlots`,");
                 writer.Write("`stat_type1`,`stat_value1`,`stat_unk1_1`,`stat_unk2_1`,`stat_type2`,`stat_value2`,`stat_unk1_2`,`stat_unk2_2`,");
@@ -27,7 +27,7 @@ namespace ADBParser
                 writer.Write("`spellid_4`,`spelltrigger_4`,`spellcharges_4`,`spellcooldown_4`,`spellcategory_4`,`spellcategorycooldown_4`,");
                 writer.Write("`spellid_5`,`spelltrigger_5`,`spellcharges_5`,`spellcooldown_5`,`spellcategory_5`,`spellcategorycooldown_5`,");
                 writer.Write("`Bonding`,`Description`,`PageText`,`LanguageID`,`PageMaterial`,`StartQuest`,`LockID`,`Material`,");
-                writer.Write("`Sheath`,`RandomProperty`,`RandomSuffix`,`ItemSet`,`MaxDurability`,`Area`,`Map`,`BagFamily`,`TotemCategory`,");
+                writer.Write("`Sheath`,`RandomProperty`,`RandomSuffix`,`ItemSet`,`Area`,`Map`,`BagFamily`,`TotemCategory`,");
                 writer.Write("`SocketColor_1`,`SocketContent_1`,`SocketColor_2`,`SocketContent_2`,`SocketColor_3`,`SocketContent_3`,`SocketBonus`,");
                 writer.Write("`GemProperties`,`ArmorDamageModifier`,`Duration`,`ItemLimitCategory`,`HolidayId`,`StatScalingFactor`,`Field130`,`Field131`,`WDBVerified`");
                 writer.WriteLine(") VALUES");

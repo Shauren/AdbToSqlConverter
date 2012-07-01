@@ -12,7 +12,7 @@ namespace ADBParser
             using (var writer = new StreamWriter("item_parsed.sql", false))
             {
                 writer.Write("REPLACE INTO `item_template` (");
-                writer.Write("`entry`,`Class`,`SubClass`,`Unk0`,`Name`,`DisplayId`,`Quality`,`Flags`,`FlagsExtra`,`Unk430_1`,`Unk430_2`,`Unk430_3`,`BuyPrice`,`SellPrice`,`InventoryType`,");
+                writer.Write("`entry`,`Class`,`SubClass`,`Unk0`,`Name`,`DisplayId`,`Quality`,`Flags`,`FlagsExtra`,`Unk430_1`,`Unk430_2`,`BuyCount`,`BuyPrice`,`SellPrice`,`InventoryType`,");
                 writer.Write("`AllowableClass`,`AllowableRace`,`ItemLevel`,`RequiredLevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredSpell`,`RequiredHonorRank`,");
                 writer.Write("`RequiredCityRank`,`RequiredReputationFaction`,`RequiredReputationRank`,`MaxCount`,`Stackable`,`ContainerSlots`,");
                 writer.Write("`stat_type1`,`stat_value1`,`stat_unk1_1`,`stat_unk2_1`,`stat_type2`,`stat_value2`,`stat_unk1_2`,`stat_unk2_2`,");

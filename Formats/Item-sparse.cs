@@ -9,7 +9,7 @@ namespace ADBParser.Formats
         public int    Flags2 { get; set; }                                       // 3
         public float  Unk430_1 { get; set; }
         public float  Unk430_2 { get; set; }
-        public int    Unk430_3 { get; set; }
+        public int    BuyCount { get; set; }
         public int    BuyPrice { get; set; }                                     // 4
         public int    SellPrice { get; set; }                                    // 5
         public int    InventoryType { get; set; }                                // 6

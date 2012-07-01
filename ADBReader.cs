@@ -114,16 +114,16 @@ namespace ADBParser
                 Locale = reader.ReadInt32();
                 reader.ReadInt32(); // unknown
 
-                // No idea what these are...
+                // Table indexes
                 // TODO: Unhackify this.
                 if (MaxId > 0)
                 {
                     if (MaxId < 12)
                         throw new InvalidDataException("Invalid maximum ID value was encountered.");
 
-                    var size = MaxId * 4 - 48;
-                    reader.ReadBytes(size);
-                    reader.ReadBytes(size * 2);
+                    var indexes = MaxId - MinId + 1;
+                    reader.ReadBytes(indexes * 4);
+                    reader.ReadBytes(indexes * 2);
                 }
             }
 
